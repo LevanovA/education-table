@@ -1,0 +1,18 @@
+.table {
+  flex-grow: 1;
+  padding: 0 50px 48px;
+  background-color: transparent;
+
+  &__content {
+    max-width: 1800px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff;
+    overflow-x: auto;
+  }
+
+  &__cell {
+    color: red;
+  }
+}
