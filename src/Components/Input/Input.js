@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./style.scss";
 
-const Input = ({ placeholder }) => {
-  const data = placeholder != null ? placeholder.toString() : "";
-  const [inputValue, setInputValue] = useState(placeholder);
+const Input = (props) => {
+  const data = props?.placeholder?.toString() ?? "";
+  const [inputValue, setInputValue] = useState(data);
 
   const onChange = (e) => {
     setInputValue(e.target.value);

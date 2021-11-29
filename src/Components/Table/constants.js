@@ -1,8 +1,14 @@
 import Input from "../Input";
 
-export const BASE_URL = 'http://localhost:3004';
+export const BASE_URL = "http://localhost:3004";
 
 export const columns = [
+  {
+    title: "Id",
+    dataIndex: "id",
+    key: "id",
+    render: (text) => <Input placeholder={text} />,
+  },
   {
     title: "HealthIndex",
     dataIndex: "healthIndex",
@@ -79,12 +85,6 @@ export const columns = [
     title: "ReportingDateTime",
     dataIndex: "reportingDateTime",
     key: "reportingDateTime",
-    render: (text) => <Input placeholder={text} />,
-  },
-  {
-    title: "Id",
-    dataIndex: "id",
-    key: "id",
     render: (text) => <Input placeholder={text} />,
   },
 ];

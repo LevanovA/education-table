@@ -99,7 +99,12 @@ const TableData = () => {
     <>
       <div className="table">
         <div className="table__content">
-          <Table dataSource={data} columns={columns} loading={loading} />
+          <Table
+            dataSource={data}
+            columns={columns}
+            loading={loading}
+            rowKey={(row) => row.id}
+          />
         </div>
       </div>
       {error && <Alert message={error.toString()} type="error" />}
